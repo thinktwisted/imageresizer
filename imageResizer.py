@@ -12,7 +12,9 @@ count = 0
 
 # Loop over all the files in the current directory
 for filename in os.listdir('.'):
-    if not (filename.endswith('.png') or filename.endswith('.jpg') or filename.endswith('.PNG') or filename.endswith('.JPG')):
+    if not (filename.endswith('.png') or filename.endswith('.jpg') or \
+            filename.endswith('.PNG') or filename.endswith('.JPG') or \
+            filename.endswith('.jpeg') or filename.endswith('.JPEG')):
         continue # skips files that are not images
 
     if os.stat(filename).st_size/1000 < 1024:
