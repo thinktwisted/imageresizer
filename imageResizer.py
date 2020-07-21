@@ -1,5 +1,7 @@
 #! python3
 # imageResizer.py - resizes all images in a folder based on user input
+# By John Van Fossen
+# ThinkTwisted.com
 
 import os
 import pyautogui as gui
